@@ -948,7 +948,7 @@ const Appointments = () => {
                     description: 'Choose from available time slots that fit your schedule'
                   },
                   {
-                    icon: Shield,
+                    icon: Star,
                     title: 'Secure & Private',
                     description: 'Your personal information is protected and confidential'
                   },
