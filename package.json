@@ -1,0 +1,19 @@
+{
+  "name": "platinum-healthcare",
+  "version": "1.0.0",
+  "description": "Platinum Healthcare UAE - Modern MERN Stack Website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["healthcare", "mern", "react", "nodejs", "mongodb"],
+  "author": "Platinum Healthcare UAE",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
