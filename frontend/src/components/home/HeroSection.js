@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Stethoscope } from 'lucide-react';
 
 const HeroSection = () => {
   return (

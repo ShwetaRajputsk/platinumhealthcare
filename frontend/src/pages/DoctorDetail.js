@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, Clock, Phone, Award, Users, CheckCircle, Languages } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Phone, Award, CheckCircle, Languages } from 'lucide-react';
 import Button from '../components/ui/Button';
 import { useQuery } from 'react-query';
 import { doctorsAPI } from '../services/api';

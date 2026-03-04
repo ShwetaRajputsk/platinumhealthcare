@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { CheckCircle, ArrowRight, Award, Users, Heart, Shield, Stethoscope } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
 
 const AboutSection = () => {

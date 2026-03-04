@@ -1,0 +1,94 @@
+RENDER ENVIRONMENT VARIABLES
+=============================
+
+Copy each key-value pair below to Render.
+DO NOT include quotes around the key names.
+
+---
+
+Key: FIREBASE_TYPE
+Value: service_account
+
+---
+
+Key: FIREBASE_PROJECT_ID
+Value: platinum-healthcare
+
+---
+
+Key: FIREBASE_PRIVATE_KEY_ID
+Value: c143be72cad1b9ba7e98c22c299ac0b64206ec44
+
+---
+
+Key: FIREBASE_PRIVATE_KEY
+Value: -----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDvFJMCblBbJe+d
+5QuRm5hFBsby211XbSBNKmVneG+cf9RQh1ffgA5Dl46rNV8fkQ6Vh5P+m05/KEiY
+pz7KJLeWlFm5NpQKKEqOBFAeRpL1ZXQbzPGDjh5GoDfB05CSgcb50QI2Qv2bvUaz
+7WWsNpo6kAdaJU/+9zMfhajvr5qwQ4ebyuyZYfgansiwWvzBQOa04o7o8FoAqOq0
+hZm1Xrk2asZEeDAAYwmxfZji/d1SWOhQN5GXZLRb7LiYf2cOIPcKnspvv8zVRer4
+lFaFGx+d2L/9oUlsImmq4Zmuof901wwKiMwIJWbcsYb5rEp+n0Ebr3S4nWHuExED
+KAEBNJlFAgMBAAECggEADOWf5eUBh16NMIf8jxxE+I7xsy7LjZMgx54z3i23B6A1
+rypok8aaqQwcnCEYQoxWrGZQliQr9dwRySUB1Bxq8uqJyd38hRfAqIHpuIMMxm7J
+9qigQVKB+5laU1BltMw0vvaGwgVBx7b21hnw/tCV5/bWZAct6452PuBnnpZrJ9BC
+EXqpHxuS/ME0WbPNQD293nFz6dAiYbjBUX4Sk2g2FZhSr4Fg8czrgaYrplZrRAM7
+zhxnQwZfGgS3q2L7w1kSbC6NmK35rDRx9owABruV5Ye5IZASsNwyhIPRBkF41fbQ
+YTDSxdQwpbAJ302Jv2Apt7x+hhFCAzfgxQUSwxjBwQKBgQD8T1Hhn9vVWYikGg6i
+tf1OA6CNVZp25OJsBC0iZiHKq8no+TRo+/y6Sj9EfUCNip9uRk3zCLwKHOB+f2Sh
+thzn7HkDEDhGv9KJBarWwSHD8Guh6ptKbxUcOr+Mpa8Kqgl4NlGipeI5n2LJ+pAf
+zFG/t3DVB+XlmGe80Vr//flafQKBgQDyk7i4x6d8kcN3Eijlv1pTZ7Aw8BFGXxWX
+AFUU9rGZl6INDMr2PanAa83/TQSX97i3rzzj32aFC/AnXCiv7ya8n07UB0QnvgRW
+xh2wzsRzr4eShBeAWFK31PRR6uLl9ucvtQofxzs5p6exHtIiU71HRrvH6R4D2uo7
+RKOmALUsaQKBgDFCXy8Yobe+mjHHsJHNzB1+EctmKhkKSLZj/lfX7sL91Ra6CKRy
+hf3s3vtFJOQ9azEBYtiPHP8wchfgUUpNHsmc3mddtE8DxlvgEmGJJUl219ytzBG1
+LD7trVYNRuZjGiQxHrENh+ROHOBoHdlHb7JpYwsEVrsDjUVM7mJKOHOVAoGBAIOH
+Q361iwQJSTHz38cLJV/Z9ffjA4rjnaI9pOR0CsJcLJrk19wCfVt/WLfYO+hmgnre
+gqaQCFeVrIa6+rjCdH+L5cMjmXnvFw0x6QFoa67KezkfdFq8CUXyKvOL57GHWb1N
+bYrjjSJq3Is2Sfwg6Z2PJdx0czjl52Fxi0ZEVfgZAoGBAL1ue6/sSY56yMYu7/Sg
+wyE5ooOrbutt7u7esnyW6/Cew/DC47DeG5wXisRW4HeWOaiemfsfr6PL/x4xFiya
+r6u5Hl8/c9TavH61SEBnyORDew2+Z6lbKpW6SDPC/8z8/2nSagVPiZmNLURul4FA
+t1Qbqc/U+4X3waFjxTq2FKy7
+-----END PRIVATE KEY-----
+
+---
+
+Key: FIREBASE_CLIENT_EMAIL
+Value: firebase-adminsdk-fbsvc@platinum-healthcare.iam.gserviceaccount.com
+
+---
+
+Key: FIREBASE_CLIENT_ID
+Value: 115840960298769149882
+
+---
+
+Key: FIREBASE_AUTH_URI
+Value: https://accounts.google.com/o/oauth2/auth
+
+---
+
+Key: FIREBASE_TOKEN_URI
+Value: https://oauth2.googleapis.com/token
+
+---
+
+Key: FIREBASE_AUTH_PROVIDER_X509_CERT_URL
+Value: https://www.googleapis.com/oauth2/v1/certs
+
+---
+
+Key: FIREBASE_CLIENT_X509_CERT_URL
+Value: https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40platinum-healthcare.iam.gserviceaccount.com
+
+---
+
+Key: FIREBASE_UNIVERSE_DOMAIN
+Value: googleapis.com
+
+---
+
+IMPORTANT NOTES:
+1. Do NOT add quotes around key names
+2. Copy the FIREBASE_PRIVATE_KEY value exactly as shown (all lines including BEGIN and END)
+3. After adding all variables, your backend will be ready to deploy on Render

@@ -4,21 +4,12 @@ import { motion } from 'framer-motion';
 import { 
   Calendar, 
   Clock, 
-  User, 
-  Phone, 
-  Mail, 
-  FileText, 
   CheckCircle,
   AlertCircle,
   Search,
-  Filter,
-  ChevronDown,
-  Star,
-  MapPin,
-  Shield
+  Star
 } from 'lucide-react';
 import Button from '../components/ui/Button';
-import { doctorsAPI, servicesAPI, appointmentsAPI } from '../services/api';
 import toast from 'react-hot-toast';
 
 const Appointments = () => {
@@ -134,6 +125,7 @@ const Appointments = () => {
     // Use mock data for now
     setDoctors(mockDoctors);
     setServices(mockServices);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleInputChange = (e) => {
@@ -192,13 +184,14 @@ const Appointments = () => {
     setIsSubmitting(true);
 
     try {
-      const appointmentData = {
-        ...formData,
-        doctor: selectedDoctor._id,
-        service: selectedService?._id,
-        appointmentDate: selectedDate,
-        appointmentTime: selectedTime
-      };
+      // Prepare appointment data
+      // const appointmentData = {
+      //   ...formData,
+      //   doctor: selectedDoctor._id,
+      //   service: selectedService?._id,
+      //   appointmentDate: selectedDate,
+      //   appointmentTime: selectedTime
+      // };
 
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000));
