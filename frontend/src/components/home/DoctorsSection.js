@@ -25,7 +25,7 @@ const DoctorsSection = () => {
   }
 
   return (
-    <section className="py-12 px-4 bg-white">
+    <section className="py-12 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #f8fafc 0%, #f0f9ff 100%)' }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -35,8 +35,8 @@ const DoctorsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <div className="inline-block px-4 py-2 bg-cyan-100 rounded-full mb-3">
-            <span className="text-cyan-600 text-sm font-semibold">Our Medical Team</span>
+          <div className="inline-block px-4 py-2 rounded-full mb-3 text-white text-sm font-semibold" style={{ background: 'linear-gradient(135deg, #06b6d4, #6366f1)' }}>
+            Our Medical Team
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Meet Our Expert Doctors

@@ -13,7 +13,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%)' }}>
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header - Centered */}
         <motion.div
@@ -23,8 +23,8 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-block px-3 py-1.5 bg-cyan-100 rounded-full mb-3">
-            <span className="text-cyan-600 text-xs font-semibold uppercase tracking-wide">About Our Medical Center</span>
+          <div className="inline-block px-3 py-1.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full mb-3">
+            <span className="text-white text-xs font-semibold uppercase tracking-wide">About Our Medical Center</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Who We Are
@@ -64,9 +64,11 @@ const AboutSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-center space-x-2"
+                  className="flex items-center space-x-2 bg-white rounded-xl px-3 py-2.5 shadow-sm border border-cyan-100"
                 >
-                  <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                  <div className="w-6 h-6 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i className="ri-check-line text-white text-xs"></i>
+                  </div>
                   <span className="text-gray-700 font-medium text-sm">{feature}</span>
                 </motion.div>
               ))}

@@ -29,7 +29,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #fafafa 0%, #f0f9ff 100%)' }}>
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Side - Header */}
@@ -90,15 +90,13 @@ const FAQSection = () => {
               >
                 <button
                   onClick={() => setOpenFAQ(openFAQ === index ? -1 : index)}
-                  className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className={`w-full px-6 py-6 text-left flex items-center justify-between transition-colors duration-200 ${openFAQ === index ? 'bg-gradient-to-r from-cyan-50 to-violet-50' : 'hover:bg-gray-50'}`}
                 >
                   <span className="font-medium text-gray-900 pr-4">
                     {faq.question}
                   </span>
                   <ChevronRight 
-                    className={`w-5 h-5 text-gray-400 transform transition-transform duration-200 ${
-                      openFAQ === index ? 'rotate-90' : ''
-                    }`} 
+                    className={`w-5 h-5 transform transition-transform duration-200 flex-shrink-0 ${openFAQ === index ? 'rotate-90 text-cyan-500' : 'text-gray-400'}`}
                   />
                 </button>
                 

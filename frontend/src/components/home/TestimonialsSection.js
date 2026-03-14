@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-brand-light via-blue-50/30 to-cyan-50/20">
+    <section className="py-20 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 50%, #f0fdf4 100%)' }}>
       <div className="container-custom">
         {/* Header */}
         <motion.div
@@ -79,11 +79,15 @@ const TestimonialsSection = () => {
               className="group"
             >
               <div className={`
-                ${testimonial.featured ? 'bg-gradient-to-br from-brand-primary to-brand-secondary text-white' : 'bg-white border border-gray-200'} 
+                ${testimonial.featured 
+                  ? 'text-white' 
+                  : 'bg-white border border-gray-100'} 
                 rounded-3xl p-8 shadow-lg hover:shadow-2xl 
                 transition-all duration-300 group-hover:-translate-y-2
                 min-h-[320px] flex flex-col justify-between
-              `}>
+              `}
+              style={testimonial.featured ? { background: 'linear-gradient(135deg, #0891b2, #6366f1)' } : {}}
+              >
                 {/* Quote Icon */}
                 <div className={`w-12 h-12 ${
                   testimonial.featured ? 'bg-white/20' : 'bg-brand-light'
